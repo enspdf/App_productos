@@ -1,4 +1,4 @@
-﻿namespace Registro_Productos
+﻿namespace Registro_Productos.BD
 {
     partial class Form1
     {
@@ -57,6 +57,7 @@
             this.btningresar.TabIndex = 2;
             this.btningresar.Text = "Ingresar";
             this.btningresar.UseVisualStyleBackColor = true;
+            this.btningresar.Click += new System.EventHandler(this.btningresar_Click);
             // 
             // label1
             // 
@@ -139,6 +140,7 @@
             this.Controls.Add(this.txtsalir);
             this.Name = "Form1";
             this.Text = "Registro de Productos";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
